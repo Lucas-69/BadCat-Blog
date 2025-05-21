@@ -59,6 +59,20 @@
             color: #92a4ff;
         }
 
+        .titulo-preferencias {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: linear-gradient(to right, #ccc8f9, #fce4ec);
+  color: #2e2e2e;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  margin: 20px auto;         /* <-- Esto lo centra horizontalmente */
+  display: table;            /* Tamaño justo del contenido */
+}
+
         table {
             border-collapse: collapse;
             border: 2px solid rgb(200, 200, 200);
@@ -104,8 +118,9 @@
 
     </header>
 
-    <h2 style="margin: 15px;">Preferencias de GATOMALO</h2>
-    <hr>
+    <div class="titulo-preferencias">
+        <h2 style="margin: 15px;">Preferencias de <span style="font-weight: 900;">GATOMALO</span></h2>
+    </div>
 
     <div class="container">
         <table>
