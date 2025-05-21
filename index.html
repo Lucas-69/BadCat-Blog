@@ -38,10 +38,44 @@
 
 <body>
 
-    <h1> Mi tabla diaria </h1>
+    <h1> Formularios: </h1>
     <hr>
 
-    
+    <form action="envio.php" method="post" target="_blank">
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre" value="Lucas Rios" readonly disabled>
+        <br>
+        <label for="apellido"> Apellido: </label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+        <br>
+        <label for="password"> Contraseña: </label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese una contraseña">
+        <br>
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su email">
+        <br>
+        <label for="telefono"> Telefono: </label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+        <br>
+        <label for="fecha"> Fecha de nacimiento: </label>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+        <label for="archivo">Subi tu CV: </label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx">
+
+        <label for="fecha"> Fecha de ingreso laboral: </label>
+        <input type="date" id="fecha" name="fecha" max="2025-05-20">
+
+
+
+
+
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <br>    
+    </form>
 
 
 
@@ -63,6 +97,9 @@
 
 
 
+
+    <!-- <h1> Mi tabla diaria </h1>
+    <hr> -->
 
 
     <!-- <table>
@@ -75,20 +112,20 @@
         </colgroup>
 
         <tr> <!--Fila de la tabla-->
-            <!-- <th> &nbsp; </th>
+    <!-- <th> &nbsp; </th>
             <th> Volkwagen </th>
             <th> Fiat </th>
             <th> Audi </th>
             <th> Subaru </th> -->
-        <!-- <tr> Fila de la tabla -->
-            <!-- <td> Año -> </td>
+    <!-- <tr> Fila de la tabla -->
+    <!-- <td> Año -> </td>
             <td> 2019 </td> Columna de la tabla
             <td> 1984 </td>
             <td> 2018 </td>
             <td> 2020 </td>
         </tr> -->
-        <!-- <tr> Fila de la tabla -->
-            <!-- <td> Patentes -> </td>
+    <!-- <tr> Fila de la tabla -->
+    <!-- <td> Patentes -> </td>
             <td> A8329D </td> Columna de la tabla
             <td> LKNFDS8 </td>
             <td> FSDA78 </td>
