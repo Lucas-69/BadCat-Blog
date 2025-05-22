@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Sitio-Web/assets/favicon/favicon.ico" type="image/x-icon">
     <title> Bruno el Malo </title>
+    <!-- Meta tag para diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Open Graph para vista previa en redes -->
+    <meta property="og:title" content="Bruno el Malo">
+    <meta property="og:description" content="Un vistazo al universo de Bruno">
+    <meta property="og:image" content="https://badcat-blog.netlify.app/assets/img/og-image.jpg">
+    <meta property="og:url" content="https://badcat-blog.netlify.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bruno el Malo">
+    <meta name="twitter:description" content="Un vistazo al universo de Bruno">
+    <meta name="twitter:image" content="https://badcat-blog.netlify.app/assets/img/og-image.jpg">
+
+
 
     <style>
         body {
@@ -119,6 +137,80 @@
             text-align: center;
             clear: both;
         }
+
+
+        /*PARTE RESPONSIVE*/
+
+        /* Reglas base */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0.5em 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        /* Videos en columnas en escritorio, pila en móviles */
+        .video-carousel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .video-item {
+            flex: 1 1 300px;
+            max-width: 100%;
+        }
+
+        .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Ajustes específicos para móviles */
+        @media (max-width: 768px) 
+        {   .image,.image2,.image0 {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 90%;
+            }
+
+            .article {
+                width: 95%;
+                float: none;
+                margin: 10px auto;
+            }
+        }
+
+            @media (max-width: 768px) {
+                .video-carousel {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .video-item {
+                    width: 90%;
+                }
+
+                .preferencias {
+                    font-size: 1rem;
+                    padding: 1rem;
+                }
+            }
     </style>
 
 
@@ -153,7 +245,7 @@
             vecindario. Saltaba muros como sombra entre las sombras, y con una sola mirada ponía en su lugar hasta
             al gato más bravo del callejón. Tenía cicatrices que contaban sus batallas y orejas mordidas que eran
             trofeos de guerra.</p>
-        
+
         <p>Las mañanas lo veían volver como un guerrero: patas sucias, pelaje revuelto, y a veces cojeando... pero
             con ese aire de “gané otra vez” que lo hacía imposible de ignorar. Nadie sabía cómo lo hacía, pero
             siempre regresaba vivo, entero y más leyenda que el día anterior.</p>
@@ -162,7 +254,7 @@
         <p>Era el gato.</p><img class="image" src="assets/img/3.jpg" alt="Gatomalo">
         <p>Era Bati-Bruno.</p>
         <p>Era... GATOMALO.</p>
-        
+
 
 
         <h4>🌒 Capítulo 2: La Noche del Callejón 9</h4>

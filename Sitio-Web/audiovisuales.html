@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Sitio-Web/assets/favicon/favicon.ico" type="image/x-icon">
     <title> Bruno el Malo </title>
+    <!-- Meta tag para diseño responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <style>
         body {
             font-family: "Lucida Console", "Courier New", monospace;
@@ -46,7 +50,8 @@
             background-color: #04AA6D;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             background-color: black;
             padding: 10px;
             margin: 0;
@@ -137,6 +142,65 @@
 
         .video-carousel::-webkit-scrollbar-thumb:hover {
             background: #555;
+        }
+
+
+        /*PARTE RESPONSIVE*/
+
+        /* Reglas base */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0.5em 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        /* Videos en columnas en escritorio, pila en móviles */
+
+        .video-item {
+            flex: 1 1 300px;
+            max-width: 100%;
+        }
+
+        .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Ajustes específicos para móviles */
+        @media (max-width: 768px) {
+            .video-carousel {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-item {
+                width: 90%;
+            }
+
+            .preferencias {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .video-item video {
+                height: auto;
+            }
         }
     </style>
 </head>
